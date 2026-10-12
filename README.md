@@ -13,7 +13,7 @@ An MCP (Model Context Protocol) server that provides an interface between AI age
 ## Architecture
 
 ```
-┌─────────────┐     MCP Protocol      ┌──────────────────┐    subprocess     ┌─────────────┐
+┌─────────────┐     MCP Protocol      ┌──────────────────┐    subprocess       ┌─────────────┐
 │   Agent /   │ ◄──────────────────►  │  MATLAB MCP      │ ◄────────────────►  │   MATLAB    │
 │  Client     │                       │  Server          │                     │  (batch)    │
 └─────────────┘                       └──────────────────┘                     └─────────────┘
