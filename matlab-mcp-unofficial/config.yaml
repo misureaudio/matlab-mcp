@@ -1,0 +1,26 @@
+# Configuration file for MATLAB MCP Server
+
+server:
+  name: matlab-mcp-server
+  version: "0.1.0"
+  transport: stdio          # or sse for remote access
+
+matlab:
+  executable: C:/Program Files/MATLAB/R2024a/bin/matlab
+  sandbox_dir: C:/Users/MATTIA/AppData/Local/hermes/cache/scratch/matlab-sandbox
+  default_timeout_s: 300    # Max execution time per command
+  max_concurrent_sessions: 1
+  startup_commands:         # Run on session start
+    - "addpath('./scripts');"
+
+# Absolute paths for file operations (MATLAB -batch doesn't respect subprocess cwd)
+paths:
+  sandbox_dir: C:/Users/MATTIA/AppData/Local/hermes/cache/scratch/matlab-sandbox
+
+security:
+  max_upload_size_mb: 100
+  allowed_extensions: [".m", ".mat", ".json", ".csv", ".txt", ".png", ".jpg"]
+
+logging:
+  level: INFO
+  format: json

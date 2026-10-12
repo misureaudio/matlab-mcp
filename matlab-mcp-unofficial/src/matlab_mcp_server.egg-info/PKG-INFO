@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: matlab-mcp-server
+Version: 0.1.0
+Summary: MCP server for MATLAB batch mode execution
+Requires-Python: >=3.10
+Requires-Dist: fastmcp>=2.0.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: engine
+Requires-Dist: matlab.engine; extra == "engine"

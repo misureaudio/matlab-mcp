@@ -1,0 +1,2 @@
+[console_scripts]
+matlab-mcp-server = server:main

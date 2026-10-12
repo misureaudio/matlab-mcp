@@ -1,0 +1,8 @@
+    "matlab-mcp-unofficial": {
+      "command": "C:\\Users\\MATTIA\\source\\hermes-dir\\.venv\\Scripts\\matlab-mcp-server.exe",
+      "args": [
+        "--config",
+        "C:\\Users\\MATTIA\\source\\hermes-dir\\matlab-mcp-server\\config.yaml"
+      ],
+      "transport": "stdio"
+    }
